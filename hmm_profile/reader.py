@@ -46,7 +46,7 @@ def parse_metadata(f) -> models.Metadata:  # noqa: C901
         elif tag == 'MAXL':
             metadata_dict['max_instance_length'] = int(unparsed_value)
         elif tag == 'ALPH':
-            if unparsed_value.lower() == "amino:
+            if unparsed_value.lower() == "amino":
                 metadata_dict['alphabet_type'] = models.AlphabetType(unparsed_value.lower())
             else:
                 metadata_dict['alphabet_type'] = models.AlphabetType(unparsed_value)
