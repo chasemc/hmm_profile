@@ -21,7 +21,7 @@ class Metadata:
     length: int
     alphabet_type: AlphabetType
     alphabet: typing.List[str]
-    consensus_residue_annotation: bool
+    consensus_residue_annotation: bool = None
 
     accession_number: typing.Optional[str] = None
     description: typing.Optional[str] = None
